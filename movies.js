@@ -29,10 +29,10 @@ class Movie {
   }}
 
 
-moviecollection = [];
+movies = [];
 
 function updateMovieRating(title, newRating) {
-  for (let movie of moviecollection) {
+  for (let movie of movies) {
     if (movie.title === title) {
       movie.updateRating(newRating);
       break;
@@ -41,7 +41,7 @@ function updateMovieRating(title, newRating) {
 }
 }
 const interstellar = new Movie('Interstellar', 'Matthew McConaughey & Anne Hathaway', 'Explorers go into a wormhole', 9.9);
-moviecollection.push(interstellar);
+movies.push(interstellar);
 
 
 // Test your implementation
